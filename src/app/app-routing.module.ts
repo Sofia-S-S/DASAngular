@@ -1,27 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdminComponent } from './components/admin/admin.component';
-import { DoctorComponent } from './components/doctor/doctor.component';
-import { LoginComponent } from './components/login/login.component';
+
+import {LoginComponent} from './login/login.component';
+import {RegisterComponent} from './register/register.component';
+import {UserAdminComponent} from './user-admin/user-admin.component';
+import {UserDoctorComponent} from './user-doctor/user-doctor.component';
+import {UserPatientComponent} from './user-patient/user-patient.component';
 
 const routes: Routes = [
-  //A route is an object with two properties
-  {
-    path: "",
-    component: LoginComponent,
-  },
-  {
-    path: "admin",
-    component: AdminComponent,
-  },
-  {
-    path: "doctor",
-    component: DoctorComponent,
-  },
-  {
-    path: "patient",
-    component: AdminComponent,
-  }
+  {path:'login', component:LoginComponent},
+  {path:'', component:LoginComponent},
+  {path:'register', component:RegisterComponent},
+  {path:'patient', component:UserPatientComponent}, 
+  {path:'doctor', component:UserDoctorComponent},
+  {path:'admin', component:UserAdminComponent},
 ];
 
 @NgModule({
