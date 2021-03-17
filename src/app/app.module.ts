@@ -13,6 +13,7 @@ import { UserPatientComponent } from './user-patient/user-patient.component';
 import { UserDoctorComponent } from './user-doctor/user-doctor.component';
 import { UserAdminComponent } from './user-admin/user-admin.component';
 import { RegisterComponent } from './register/register.component';
+import { DoctorComponent } from './components/doctor/doctor.component'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { RegisterComponent } from './register/register.component';
     UserPatientComponent,
     UserDoctorComponent,
     UserAdminComponent,
-    RegisterComponent
+    RegisterComponent,
+    DoctorComponent
   ],
   imports: [
     BrowserModule,
