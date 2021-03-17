@@ -14,7 +14,10 @@ export class UserDoctorComponent implements OnInit {
   content?:string;
   constructor(private userService: DasUserService,
     private tokenStorageService: TokenStorageService,
-    private router:Router) { }
+    private router:Router
+    ) { }
+
+    
 
   ngOnInit(): void {
     this.userService.getUserDoctor().subscribe(
@@ -26,6 +29,7 @@ export class UserDoctorComponent implements OnInit {
       }
     )
   }
+
 
   logout(): void {
     this.tokenStorageService.logOut();
