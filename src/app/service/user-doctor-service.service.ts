@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs'; 
 import { User } from '../models/user';
 import { Appointment } from '../models/appointment';
+import { Patient } from '../models/patient';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +12,9 @@ export class UserDoctorServiceService {
 
   constructor(private HttpClient:HttpClient) { }
 
-  viewSelfPatients():Observable<User[]> {
-    return this.HttpClient.get('http://localhost:8080/doctor/viewSelfPatients') as Observable<User[]>;
+  viewSelfPatients():Observable<Patient[]> {
+
+    return this.HttpClient.get('http://localhost:8080/doctor/viewSelfPatients?doctorId=1') as Observable<Patient[]>
 
   }
 

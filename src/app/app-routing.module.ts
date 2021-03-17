@@ -6,6 +6,7 @@ import {RegisterComponent} from './register/register.component';
 import {UserAdminComponent} from './user-admin/user-admin.component';
 import {UserDoctorComponent} from './user-doctor/user-doctor.component';
 import {UserPatientComponent} from './user-patient/user-patient.component';
+import { DoctorComponent } from './components/doctor/doctor.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'patient', component:UserPatientComponent}, 
   {path:'doctor', component:UserDoctorComponent},
   {path:'admin', component:UserAdminComponent},
+  {path:'doctorViewSelfPatients', component:DoctorComponent},
 ];
 
 @NgModule({
