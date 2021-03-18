@@ -10,17 +10,34 @@
 <body>
 	<div class="navbar">
 	  <div class="dropdown">
-	    <button class="dropbtn">Management 
+	    <button class="dropbtn">Doctors 
 	      <i class="fa fa-caret-down"></i>
 	    </button>
 	    <div class="dropdown-content">
-	      <a href="/">New Doctor</a>
-	      <a href="/">Doctor Info</a>
+	      <a href="/admin/doctors">View Doctors Info</a>
+	      <a href="/admin/doctor-new">Register New Doctor</a>
 	    </div>
 	  </div> 
-	  <a href="">Profile</a> 
+	  <div class="dropdown">
+	    <button class="dropbtn">Appointments
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-content">
+	      <a href="/">Add New Avaliability</a>
+	      <a href="/">View All Schadule</a>
+	    </div>
+	  </div> 
+		  <div class="dropdown">
+	    <button class="dropbtn">Billing
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-content">
+	      <a href="/admin/bill-new">New Bill</a>
+	      <a href="/admin/bills">View All Bills</a>
+	    </div>
+	</div>
       <a href (click)="logout()">LogOut</a>
-	  <div style="margin:auto; color: white;text-align:right;"> <h5>Admin's page</h5></div>
+	  <div style="margin:auto; color: white;text-align:right;"> <h3>Admin's page</h3></div>
 	</div>
 
 	<header>
