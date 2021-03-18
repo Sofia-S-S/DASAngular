@@ -5,7 +5,7 @@ export class User{
     userId:number;
     username:String;
     password:String;
-    profilepicture:File;
+    profilepicture:String;
     firstName:String;
     lastName:String;
     gender:String;
@@ -15,7 +15,7 @@ export class User{
     dob:Date;
     role:String;
 
-    constructor(userId:number, username:String, password:String, profilepicture:File, firstName:String, lastName:String, gender:String,
+    constructor(userId:number, username:String, password:String, profilepicture:String, firstName:String, lastName:String, gender:String,
          email:String, phone:number, address:Address, dob:Date, role:String) {
              this.userId = userId;
              this.username = username;
