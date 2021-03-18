@@ -6,34 +6,31 @@ import { User } from 'src/app/models/user';
 import { UserDoctorServiceService } from 'src/app/service/user-doctor-service.service';
 
 @Component({
-  selector: 'app-doctor',
-  templateUrl: './doctor.component.html',
-  styleUrls: ['./doctor.component.css']
+  selector: 'app-doctor-appointment',
+  templateUrl: './doctor-appointment.component.html',
+  styleUrls: ['./doctor-appointment.component.css']
 })
-export class DoctorComponent implements OnInit {
+export class DoctorAppointmentComponent implements OnInit {
 
   constructor(private userDoctorServiceService:UserDoctorServiceService,
     private router:Router) { }
 
-  patients:Patient[] = [];
-    
+    appointments:Appointment[] = [];
 
   ngOnInit(): void {
-    this.viewSelfPatients();
+    this.viewBookedAppointments();
   }
 
-  //retrieves the doctor's own patients
-  viewSelfPatients(){
-    this.userDoctorServiceService.viewSelfPatients().subscribe(
+  //retrieves the doctor's appointments that are booked and active
+  viewBookedAppointments(){
+    this.userDoctorServiceService.viewBookedAppointments().subscribe(
       (data) => {
-        this.patients = data;
-        console.log(data);
+        this.appointments = data;
       },
       () => {
         console.log("Oops, something went wrong.");
       }
     )
   }
-
 
 }

@@ -7,12 +7,17 @@ import {UserAdminComponent} from './user-admin/user-admin.component';
 import {UserDoctorComponent} from './user-doctor/user-doctor.component';
 import {UserPatientComponent} from './user-patient/user-patient.component';
 import { DoctorComponent } from './components/doctor/doctor.component';
+<<<<<<< HEAD
 import { DoctorsAllComponent } from './components/admin/doctors-all/doctors-all.component';
 import { DoctorNewComponent } from './components/admin/doctor-new/doctor-new.component';
 import { ScheduleAllComponent } from './components/admin/schedule-all/schedule-all.component';
 import { ScheduleNewComponent } from './components/admin/schedule-new/schedule-new.component';
 import { BillNewComponent } from './components/admin/bill-new/bill-new.component';
 import { BillsComponent } from './components/admin/bills/bills.component';
+=======
+import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
+import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
+>>>>>>> a86f789 (Added and Implemented Patient and Doctor Components)
 
 const routes: Routes = [
   {path:'', component:LoginComponent},
@@ -28,6 +33,8 @@ const routes: Routes = [
   {path:'admin/bills', component:BillsComponent},
   {path:'doctor', component:UserDoctorComponent},
   {path:'doctorViewSelfPatients', component:DoctorComponent},
+  {path:'doctorViewBookedAppointments', component:DoctorAppointmentComponent},
+  {path:'bills', component:PatientViewBillsComponent},
 ];
 
 @NgModule({

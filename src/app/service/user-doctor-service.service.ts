@@ -19,7 +19,7 @@ export class UserDoctorServiceService {
   }
 
   viewBookedAppointments():Observable<Appointment[]> {
-    return this.HttpClient.get('http://localhost:8080/doctor/viewBookedAppointments') as Observable<Appointment[]>;
+    return this.HttpClient.get('http://localhost:8080/doctor/viewBookedAppointments?doctorId=1') as Observable<Appointment[]>;
 
   }
 }

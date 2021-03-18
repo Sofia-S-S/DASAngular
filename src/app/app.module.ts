@@ -14,6 +14,7 @@ import { UserDoctorComponent } from './user-doctor/user-doctor.component';
 import { UserAdminComponent } from './user-admin/user-admin.component';
 import { RegisterComponent } from './register/register.component';
 import { DoctorComponent } from './components/doctor/doctor.component';
+<<<<<<< HEAD
 import { DoctorNewComponent } from './components/admin/doctor-new/doctor-new.component';
 import { DoctorsAllComponent } from './components/admin/doctors-all/doctors-all.component'; 
 import { FooterComponent } from './components/footer/footer.component';
@@ -21,6 +22,11 @@ import { ScheduleNewComponent } from './components/admin/schedule-new/schedule-n
 import { ScheduleAllComponent } from './components/admin/schedule-all/schedule-all.component';
 import { BillNewComponent } from './components/admin/bill-new/bill-new.component';
 import { BillsComponent } from './components/admin/bills/bills.component';
+=======
+import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
+import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
+import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component'; 
+>>>>>>> a86f789 (Added and Implemented Patient and Doctor Components)
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,12 +37,18 @@ import { BillsComponent } from './components/admin/bills/bills.component';
     UserAdminComponent,
     RegisterComponent,
     DoctorComponent,
+<<<<<<< HEAD
     DoctorNewComponent,
     DoctorsAllComponent,
     ScheduleNewComponent,
     ScheduleAllComponent,
     BillNewComponent,
     BillsComponent
+=======
+    DoctorAppointmentComponent,
+    PatientViewBillsComponent,
+    PatientViewAppointmentsComponent
+>>>>>>> a86f789 (Added and Implemented Patient and Doctor Components)
   ],
   imports: [
     BrowserModule,
