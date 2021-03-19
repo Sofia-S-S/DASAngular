@@ -1,1 +1,11 @@
-<p>bill-new works!</p>
+<div class = "card">
+    <h2>Send Bill</h2>
+    <form>
+        <label for="user.userId">Patient ID</label>
+        <input [(ngModel)]="newBill.user.userId" type="number" placeholder="patient ID" name="user.userId"/>
+        <label for="total"> Billing amount in $</label>
+        <input [(ngModel)]="newBill.total" type="number" placeholder="total" name="total"/>
+
+        <button (click)="createBill()">Send</button>
+    </form>
+</div>
