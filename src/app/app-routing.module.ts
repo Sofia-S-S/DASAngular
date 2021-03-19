@@ -13,6 +13,7 @@ import { ScheduleAllComponent } from './components/admin/schedule-all/schedule-a
 import { ScheduleNewComponent } from './components/admin/schedule-new/schedule-new.component';
 import { BillNewComponent } from './components/admin/bill-new/bill-new.component';
 import { BillsComponent } from './components/admin/bills/bills.component';
+import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
 
 const routes: Routes = [
   {path:'', component:LoginComponent},
@@ -27,8 +28,8 @@ const routes: Routes = [
   {path:'admin/bill-new', component:BillNewComponent},
   {path:'admin/bills', component:BillsComponent},
   {path:'doctor', component:UserDoctorComponent},
-  {path:'doctorViewSelfPatients', component:DoctorComponent}
-  // {path:'doctorViewBookedAppointments', component:DoctorAppointmentComponent},
+  {path:'doctor/patients', component:DoctorComponent},
+  {path:'doctor/appointments', component:DoctorAppointmentComponent}
   // {path:'bills', component:PatientViewBillsComponent},
 ];
 

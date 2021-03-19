@@ -25,6 +25,10 @@ import { BillsComponent } from './components/admin/bills/bills.component';
 import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
 import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
 import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
+import { AdminNavbarComponent } from './components/admin/admin-navbar/admin-navbar.component';
+import { AdminHeaderComponent } from './components/admin/admin-header/admin-header.component';
+import { DoctorNavbarComponent } from './components/doctor/doctor-navbar/doctor-navbar.component';
+import { DoctorHeaderComponent } from './components/doctor/doctor-header/doctor-header.component';
 
 
 @NgModule({
@@ -45,7 +49,11 @@ import { PatientViewAppointmentsComponent } from './components/patient/patientVi
     BillsComponent,
     DoctorAppointmentComponent,
     PatientViewBillsComponent,
-    PatientViewAppointmentsComponent
+    PatientViewAppointmentsComponent,
+    AdminNavbarComponent,
+    AdminHeaderComponent,
+    DoctorNavbarComponent,
+    DoctorHeaderComponent
   ],
   imports: [
     BrowserModule,

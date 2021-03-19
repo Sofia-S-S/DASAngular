@@ -17,20 +17,20 @@ export class AdminService {
   }
 
   createDoctor(doctor:User):Observable<User>{
-    return this.httpClient.post<User>("http://localhost:8080/user/new", doctor) 
+    return this.httpClient.post<User>("http://localhost:8080/user/new-doctor", doctor) 
   }
 
-  getAllBills():Observable<User[]>{
-    return this.httpClient.get("http://localhost:8080/bill/all") as Observable<User[]>
+  getAllBills():Observable<Bill[]>{
+    return this.httpClient.get("http://localhost:8080/bill/all") as Observable<Bill[]>
   }
-  createBill(bill:Bill):Observable<User>{
-    return this.httpClient.post<User>("http://localhost:8080/bill/new", bill) 
+  createBill(bill:Bill):Observable<Bill>{
+    return this.httpClient.post<Bill>("http://localhost:8080/bill/new", bill) 
   }
 
-  getAllAppointments():Observable<User[]>{
-    return this.httpClient.get("http://localhost:8080/appointment/all") as Observable<User[]>
+  getAllAppointments():Observable<Appointment[]>{
+    return this.httpClient.get("http://localhost:8080/appointment/all") as Observable<Appointment[]>
   }
-  createAppointment(appointment:Appointment):Observable<User>{
-    return this.httpClient.post<User>("http://localhost:8080/appointment/new", appointment) 
+  createAppointment(appointment:Appointment):Observable<Appointment>{
+    return this.httpClient.post<Appointment>("http://localhost:8080/appointment/new", appointment) 
   }
 }

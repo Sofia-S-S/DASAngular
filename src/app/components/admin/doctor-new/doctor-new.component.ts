@@ -14,9 +14,12 @@ export class DoctorNewComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  //All users will have same address with id=1
+  //Need to create address first then create user with that address
   address:Address = new Address(1,"","","",1,"")
-  newDoctor: User = new User(1,"","","","","","","",0,this.address,new Date,"")
+
+  //Make sure we do not have user with that id
+  newDoctor: User = new User(99999999,"","","","","","","",0,this.address,new Date,"Doctor")
 
   createDoctor(){
     this.adminService.createDoctor(this.newDoctor).subscribe(
