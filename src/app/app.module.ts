@@ -29,6 +29,8 @@ import { AdminNavbarComponent } from './components/admin/admin-navbar/admin-navb
 import { AdminHeaderComponent } from './components/admin/admin-header/admin-header.component';
 import { DoctorNavbarComponent } from './components/doctor/doctor-navbar/doctor-navbar.component';
 import { DoctorHeaderComponent } from './components/doctor/doctor-header/doctor-header.component';
+import { PatientNavbarComponent } from './components/patient/patient-navbar/patient-navbar.component';
+import { PatientHeaderComponent } from './components/patient/patient-header/patient-header.component';
 
 
 @NgModule({
@@ -53,7 +55,9 @@ import { DoctorHeaderComponent } from './components/doctor/doctor-header/doctor-
     AdminNavbarComponent,
     AdminHeaderComponent,
     DoctorNavbarComponent,
-    DoctorHeaderComponent
+    DoctorHeaderComponent,
+    PatientNavbarComponent,
+    PatientHeaderComponent
   ],
   imports: [
     BrowserModule,
