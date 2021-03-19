@@ -1,4 +1,9 @@
-<h1>All Doctors</h1>
+<!--Navbar-->
+<app-admin-navbar></app-admin-navbar>
+<!--Header-->
+<app-admin-header></app-admin-header>
+<!--Content-->
+        <h1>All Doctors</h1>
 <div class="wrapper">
 <div *ngFor="let d of doctors" >
     <div class = "doctor-card">
@@ -39,4 +44,5 @@
         <input [(ngModel)]="newDoctor.dob" type="date" placeholder="dob" name="dob"/>
         <button (click)="createDoctor()">Add Doctor</button>
     </form>
-</div>
+
+

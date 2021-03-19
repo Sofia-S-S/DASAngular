@@ -60,39 +60,39 @@
 }
 
 /* footer */
-/* footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px 0;
-    background-color: grey;
-  }
-  
-  .content.left {
-    margin-left: 20px;
-  }
-  
-  .content.right {
-    float: right;
-    margin-right: 40px;
-  } */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: grey;
+}
+
+.content.left {
+  margin-left: 20px;
+}
+
+.content.right {
+  float: right;
+  margin-right: 40px;
+}
 
 * {
   box-sizing: border-box;
 }
 
-/* .bg-img { */
-/* The image used */
-/* background-image: url('../../assets/image/WadiRum3.jpg');
-  
-    min-height: 100%; */
+.bg-img {
+  /* The image used */
+  background-image: url("../../../../assets/image/WadiRum3.jpg");
 
-/* Center and scale the image nicely */
-/* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  } */
+  min-height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
 /* Add styles to the form container */
 .container {
