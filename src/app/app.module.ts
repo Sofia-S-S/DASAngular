@@ -31,6 +31,7 @@ import { DoctorNavbarComponent } from './components/doctor/doctor-navbar/doctor-
 import { DoctorHeaderComponent } from './components/doctor/doctor-header/doctor-header.component';
 import { PatientNavbarComponent } from './components/patient/patient-navbar/patient-navbar.component';
 import { PatientHeaderComponent } from './components/patient/patient-header/patient-header.component';
+import { PatientDoctorsAllComponent } from './components/patient/patient-doctors-all/patient-doctors-all.component';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { PatientHeaderComponent } from './components/patient/patient-header/pati
     DoctorNavbarComponent,
     DoctorHeaderComponent,
     PatientNavbarComponent,
-    PatientHeaderComponent
+    PatientHeaderComponent,
+    PatientDoctorsAllComponent
   ],
   imports: [
     BrowserModule,
