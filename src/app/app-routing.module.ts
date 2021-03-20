@@ -13,13 +13,13 @@ import { ScheduleAllComponent } from './components/admin/schedule-all/schedule-a
 import { ScheduleNewComponent } from './components/admin/schedule-new/schedule-new.component';
 import { BillNewComponent } from './components/admin/bill-new/bill-new.component';
 import { BillsComponent } from './components/admin/bills/bills.component';
-<<<<<<< HEAD
+
 import { TestComponent } from './test/test.component';
-=======
+
 import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
 import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
 import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
->>>>>>> 2863807674fa2dab047a977a91612f960a152062
+
 
 const routes: Routes = [
   {path:'', component:LoginComponent},
@@ -33,18 +33,18 @@ const routes: Routes = [
   {path:'admin/bill-new', component:BillNewComponent},
   {path:'admin/bills', component:BillsComponent},
   {path:'doctor', component:UserDoctorComponent},
-<<<<<<< HEAD
+
   {path:'doctorViewSelfPatients', component:DoctorComponent},
-  {path:'test', component:TestComponent}
+  {path:'test', component:TestComponent},
   // {path:'doctorViewBookedAppointments', component:DoctorAppointmentComponent},
   // {path:'bills', component:PatientViewBillsComponent},
-=======
+
   {path:'doctor/patients', component:DoctorComponent},
   {path:'doctor/appointments', component:DoctorAppointmentComponent},
   {path:'patient', component:UserPatientComponent},
   {path:'patient/bills', component:PatientViewBillsComponent},
   {path:'patient/appointments', component:PatientViewAppointmentsComponent}
->>>>>>> 2863807674fa2dab047a977a91612f960a152062
+
 ];
 
 @NgModule({
