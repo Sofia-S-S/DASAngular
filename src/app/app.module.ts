@@ -25,13 +25,18 @@ import { BillsComponent } from './components/admin/bills/bills.component';
 import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
 import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
 import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
+
+import { TestComponent } from './test/test.component';
+
 import { AdminNavbarComponent } from './components/admin/admin-navbar/admin-navbar.component';
 import { AdminHeaderComponent } from './components/admin/admin-header/admin-header.component';
 import { DoctorNavbarComponent } from './components/doctor/doctor-navbar/doctor-navbar.component';
 import { DoctorHeaderComponent } from './components/doctor/doctor-header/doctor-header.component';
 import { PatientNavbarComponent } from './components/patient/patient-navbar/patient-navbar.component';
 import { PatientHeaderComponent } from './components/patient/patient-header/patient-header.component';
+
 import { PatientDoctorsAllComponent } from './components/patient/patient-doctors-all/patient-doctors-all.component';
+
 
 
 @NgModule({
@@ -53,13 +58,20 @@ import { PatientDoctorsAllComponent } from './components/patient/patient-doctors
     DoctorAppointmentComponent,
     PatientViewBillsComponent,
     PatientViewAppointmentsComponent,
+
+    TestComponent,
+
     AdminNavbarComponent,
     AdminHeaderComponent,
     DoctorNavbarComponent,
     DoctorHeaderComponent,
     PatientNavbarComponent,
+
     PatientHeaderComponent,
-    PatientDoctorsAllComponent
+    PatientDoctorsAllComponent,
+
+    PatientHeaderComponent
+
   ],
   imports: [
     BrowserModule,
