@@ -18,7 +18,7 @@ export class BillNewComponent implements OnInit {
   // initialize with fake data
   address:Address = new Address(1,"","","",1,"")
   user:User = new User(1,"","","","","","","",1,this.address,new Date,"")
-  newBill:Bill = new Bill(1,this.user,1,new Date,new Date)
+  newBill:Bill = new Bill(1111111,this.user,1,new Date,new Date)
 
   createBill(){
     this.adminService.createBill(this.newBill).subscribe(

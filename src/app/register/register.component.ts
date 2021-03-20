@@ -55,7 +55,7 @@ export class RegisterComponent implements OnInit {
     
     const addr = <Address>{}; 
     const dob = new Date();
-    let user:User = new User(1,username,  password, '', '','',email,'',987654321,addr,dob,role);
+    let user:User = new User(1,username,  password, '', '','','',email,987654321,addr,dob,role);
     console.log(user);
     //console.log(imageUpload.name);
 
