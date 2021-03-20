@@ -25,6 +25,7 @@ import { BillsComponent } from './components/admin/bills/bills.component';
 import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
 import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
 import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
+import { TestComponent } from './test/test.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { PatientViewAppointmentsComponent } from './components/patient/patientVi
     BillsComponent,
     DoctorAppointmentComponent,
     PatientViewBillsComponent,
-    PatientViewAppointmentsComponent
+    PatientViewAppointmentsComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
