@@ -70,7 +70,7 @@ const routes: Routes = [
     }
   },
   {path:'patient/bills', component:PatientViewBillsComponent},
-  {path:'patient/appointments', component:PatientViewAppointmentsComponent}
+  {path:'patient/appointments', component:PatientViewAppointmentsComponent},
 
   {
     path:'unauth', component:UnauthpageComponent
