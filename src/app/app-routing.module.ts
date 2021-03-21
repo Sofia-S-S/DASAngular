@@ -75,13 +75,8 @@ const routes: Routes = [
 
   {
     path:'unauth', component:UnauthpageComponent
-<<<<<<< HEAD
   },
   {path: 'patient/new', component:PatientRegisterComponent},
-  
-=======
-  }
->>>>>>> a40c85340a4f6e3147eaddc999525fe1ecde9631
 ];
 
 @NgModule({
