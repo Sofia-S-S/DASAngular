@@ -61,6 +61,7 @@ import { DoctorAppointmentComponent } from './components/doctor/doctorappointmen
 import { PatientViewBillsComponent } from './components/patient/patientviewbills/patient-view-bills/patient-view-bills.component';
 import { PatientViewAppointmentsComponent } from './components/patient/patientviewappointments/patient-view-appointments/patient-view-appointments.component';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { PatientRegisterComponent } from './components/patient/patientregister/patient-register/patient-register.component';
 <<<<<<< HEAD
 >>>>>>> 3729c49 (Added POST and GET for patient)
@@ -70,6 +71,9 @@ import { PatientRegisterComponent } from './components/patient/patientregister/p
 >>>>>>> d375560 (Deleted and commented in routing and module)
 =======
 >>>>>>> c32b802 (Modified app-routing)
+=======
+import { PatientRegisterComponent } from './components/patient/patientregister/patient-register/patient-register.component';
+>>>>>>> 2780aaa (Rebased and fixed aap-rotuing and module)
 
 
 const routes: Routes = [
@@ -85,11 +89,7 @@ const routes: Routes = [
     component:UserAdminComponent,
     canActivate: [AuthGuard],
     data: {
-<<<<<<< HEAD
-      userRoles: [Roles.ADMIN] 
-=======
       userRoles: [Roles.ADMIN]
->>>>>>> f654595 (Modified app-routing)
     }
   },
 
@@ -100,6 +100,7 @@ const routes: Routes = [
   {path:'admin/schedule-new', component:ScheduleNewComponent},
   {path:'admin/bill-new', component:BillNewComponent},
   {path:'admin/bills', component:BillsComponent},
+<<<<<<< HEAD
 <<<<<<< HEAD
   {path:'doctor', component:UserDoctorComponent},
 <<<<<<< HEAD
@@ -128,6 +129,8 @@ const routes: Routes = [
   },
 =======
 >>>>>>> f654595 (Modified app-routing)
+=======
+>>>>>>> 2780aaa (Rebased and fixed aap-rotuing and module)
 
   {
     path:'doctor', component:UserDoctorComponent,
@@ -140,6 +143,7 @@ const routes: Routes = [
   {path:'doctorViewSelfPatients', component:DoctorComponent},
 >>>>>>> c32b802 (Modified app-routing)
   {path:'test', component:TestComponent},
+<<<<<<< HEAD
   // {path:'doctorViewBookedAppointments', component:DoctorAppointmentComponent},
   // {path:'bills', component:PatientViewBillsComponent},
 
@@ -149,6 +153,8 @@ const routes: Routes = [
   // {path:'doctorViewBookedAppointments', component:DoctorAppointmentComponent},
   // {path:'bills', component:PatientViewBillsComponent},
 >>>>>>> 3dd0cf5 (1.3)
+=======
+>>>>>>> 2780aaa (Rebased and fixed aap-rotuing and module)
   {path:'doctor/patients', component:DoctorComponent},
   {path:'doctor/appointments', component:DoctorAppointmentComponent},
 <<<<<<< HEAD
@@ -160,13 +166,8 @@ const routes: Routes = [
     component:UserPatientComponent,
     canActivate: [AuthGuard],
     data: {
-<<<<<<< HEAD
-      userRoles: [Roles.PATIENT] 
-      //userRoles: [Roles.ADMIN, Roles.PATIENT, Roles.DOCTOR] // Multiple Allowed User
-=======
       userRoles: [Roles.PATIENT]
 
->>>>>>> f654595 (Modified app-routing)
     }
   },
 >>>>>>> c32b802 (Modified app-routing)
@@ -182,12 +183,10 @@ const routes: Routes = [
 >>>>>>> 3dd0cf5 (1.3)
 =======
   {path:'patient/appointments', component:PatientViewAppointmentsComponent},
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-<<<<<<< HEAD
   {
     path:'unauth', component:UnauthpageComponent
+<<<<<<< HEAD
   }
 <<<<<<< HEAD
 >>>>>>> 5baa684 (1.4)
@@ -211,12 +210,23 @@ const routes: Routes = [
 >>>>>>> d375560 (Deleted and commented in routing and module)
 =======
 =======
+=======
+  },
+
+  {path:'doctorViewBookedAppointments', component:DoctorAppointmentComponent},
+  {path:'patient-bills', component:PatientViewBillsComponent},
+  {path:'patient-new', component:PatientRegisterComponent},
+
+>>>>>>> 2780aaa (Rebased and fixed aap-rotuing and module)
 
   {
     path: 'unauth', component:UnauthpageComponent
   }
+<<<<<<< HEAD
 >>>>>>> f654595 (Modified app-routing)
 >>>>>>> c32b802 (Modified app-routing)
+=======
+>>>>>>> 2780aaa (Rebased and fixed aap-rotuing and module)
 ];
 
 @NgModule({

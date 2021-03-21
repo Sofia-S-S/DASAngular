@@ -25,6 +25,7 @@ import { BillsComponent } from './components/admin/bills/bills.component';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
@@ -39,6 +40,11 @@ import { PatientViewAppointmentsComponent } from './components/patient/patientVi
 
 >>>>>>> c5e2c59 (Deleted and commented in routing and module)
 >>>>>>> d375560 (Deleted and commented in routing and module)
+=======
+import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
+import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
+import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
+>>>>>>> 2780aaa (Rebased and fixed aap-rotuing and module)
 import { TestComponent } from './test/test.component';
 
 import { AdminNavbarComponent } from './components/admin/admin-navbar/admin-navbar.component';
@@ -49,13 +55,6 @@ import { PatientNavbarComponent } from './components/patient/patient-navbar/pati
 import { PatientHeaderComponent } from './components/patient/patient-header/patient-header.component';
 
 import { PatientDoctorsAllComponent } from './components/patient/patient-doctors-all/patient-doctors-all.component';
-
-
-
-
-import { DoctorAppointmentComponent } from './components/doctor/doctorappointment/doctor-appointment/doctor-appointment.component';
-import { PatientViewBillsComponent } from './components/patient/patientviewbills/patient-view-bills/patient-view-bills.component';
-import { PatientViewAppointmentsComponent } from './components/patient/patientviewappointments/patient-view-appointments/patient-view-appointments.component';
 import { PatientRegisterComponent } from './components/patient/patientregister/patient-register/patient-register.component'; 
 
 
@@ -84,6 +83,7 @@ import { TestComponent } from './test/test.component';
     DoctorComponent,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
@@ -96,12 +96,15 @@ import { TestComponent } from './test/test.component';
 
 
 >>>>>>> d375560 (Deleted and commented in routing and module)
+=======
+>>>>>>> 2780aaa (Rebased and fixed aap-rotuing and module)
     DoctorNewComponent,
     DoctorsAllComponent,
     ScheduleNewComponent,
     ScheduleAllComponent,
     BillNewComponent,
     BillsComponent,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -112,6 +115,9 @@ import { TestComponent } from './test/test.component';
 =======
 
 >>>>>>> d375560 (Deleted and commented in routing and module)
+=======
+    DoctorAppointmentComponent,
+>>>>>>> 2780aaa (Rebased and fixed aap-rotuing and module)
     PatientViewBillsComponent,
     PatientViewAppointmentsComponent,
 <<<<<<< HEAD
@@ -125,6 +131,7 @@ import { TestComponent } from './test/test.component';
     PatientNavbarComponent,
 
     PatientHeaderComponent,
+<<<<<<< HEAD
 <<<<<<< HEAD
     PatientDoctorsAllComponent,
 
@@ -164,6 +171,10 @@ import { TestComponent } from './test/test.component';
 
 >>>>>>> 7b80df5 (Added POST and GET for patient)
 >>>>>>> f1440db (Added POST and GET for patient)
+=======
+    PatientDoctorsAllComponent,
+    PatientRegisterComponent,
+>>>>>>> 2780aaa (Rebased and fixed aap-rotuing and module)
   ],
   imports: [
     BrowserModule,
