@@ -22,9 +22,15 @@ import { ScheduleNewComponent } from './components/admin/schedule-new/schedule-n
 import { ScheduleAllComponent } from './components/admin/schedule-all/schedule-all.component';
 import { BillNewComponent } from './components/admin/bill-new/bill-new.component';
 import { BillsComponent } from './components/admin/bills/bills.component';
+<<<<<<< HEAD
 import { DoctorAppointmentComponent } from './components/doctor/doctorappointment/doctor-appointment/doctor-appointment.component';
 import { PatientViewBillsComponent } from './components/patient/patientviewbills/patient-view-bills/patient-view-bills.component';
 import { PatientViewAppointmentsComponent } from './components/patient/patientviewappointments/patient-view-appointments/patient-view-appointments.component';
+=======
+import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
+import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
+import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
+>>>>>>> a40c85340a4f6e3147eaddc999525fe1ecde9631
 import { TestComponent } from './test/test.component';
 import { AuthGuard } from './auth_service/auth.guard';
 import { UnauthpageComponent } from './auth_service/unauthpage/unauthpage.component';
@@ -69,8 +75,12 @@ import { PatientRegisterComponent } from './components/patient/patientregister/p
     DoctorHeaderComponent,
     PatientNavbarComponent,
     PatientHeaderComponent,
+<<<<<<< HEAD
     PatientDoctorsAllComponent,
     PatientRegisterComponent,
+=======
+    PatientDoctorsAllComponent
+>>>>>>> a40c85340a4f6e3147eaddc999525fe1ecde9631
   ],
   imports: [
     BrowserModule,
