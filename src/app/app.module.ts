@@ -25,8 +25,9 @@ import { BillsComponent } from './components/admin/bills/bills.component';
 import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
 import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
 import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
-
 import { TestComponent } from './test/test.component';
+import { AuthGuard } from './auth_service/auth.guard';
+import { UnauthpageComponent } from './auth_service/unauthpage/unauthpage.component';
 
 import { AdminNavbarComponent } from './components/admin/admin-navbar/admin-navbar.component';
 import { AdminHeaderComponent } from './components/admin/admin-header/admin-header.component';
@@ -58,20 +59,16 @@ import { PatientDoctorsAllComponent } from './components/patient/patient-doctors
     DoctorAppointmentComponent,
     PatientViewBillsComponent,
     PatientViewAppointmentsComponent,
-
     TestComponent,
+    UnauthpageComponent,
 
     AdminNavbarComponent,
     AdminHeaderComponent,
     DoctorNavbarComponent,
     DoctorHeaderComponent,
     PatientNavbarComponent,
-
     PatientHeaderComponent,
-    PatientDoctorsAllComponent,
-
-    PatientHeaderComponent
-
+    PatientDoctorsAllComponent
   ],
   imports: [
     BrowserModule,
@@ -79,7 +76,7 @@ import { PatientDoctorsAllComponent } from './components/patient/patient-doctors
     FormsModule,
     HttpClientModule
   ],
-  providers: [authInterceptorProviders],
+  providers: [authInterceptorProviders, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

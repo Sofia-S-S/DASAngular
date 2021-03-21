@@ -17,6 +17,9 @@ export class AdminService {
   }
 
   createDoctor(doctor:User):Observable<User>{
+
+    console.log(doctor);
+
     return this.httpClient.post<User>("http://localhost:8080/admin/new-doctor", doctor) 
   }
 

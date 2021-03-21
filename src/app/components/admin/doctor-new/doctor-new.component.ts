@@ -21,11 +21,13 @@ export class DoctorNewComponent implements OnInit {
   //Make sure we do not have user with that id
   newDoctor: User = new User(99999999,"","","","","","","",0,this.address,new Date,"doctor")
 
+
     //Start with form being visible
     hideForm: boolean = false;
     //Error message set to not visible
     hideMessage: boolean = true;
     hideError: boolean = true;
+
 
   createDoctor(){
     this.adminService.createDoctor(this.newDoctor).subscribe(
