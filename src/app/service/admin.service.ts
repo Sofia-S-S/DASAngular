@@ -17,7 +17,9 @@ export class AdminService {
   }
 
   createDoctor(doctor:User):Observable<User>{
+
     console.log(doctor);
+
     return this.httpClient.post<User>("http://localhost:8080/admin/new-doctor", doctor) 
   }
 
@@ -28,10 +30,10 @@ export class AdminService {
     return this.httpClient.post<Bill>("http://localhost:8080/bill/new", bill) 
   }
 
-  getAllAppointments():Observable<User[]>{
-    return this.httpClient.get("http://localhost:8080/appointment/all") as Observable<User[]>
+  getAllAppointments():Observable<Appointment[]>{
+    return this.httpClient.get("http://localhost:8080/appointment/all") as Observable<Appointment[]>
   }
-  createAppointment(appointment:Appointment):Observable<User>{
-    return this.httpClient.post<User>("http://localhost:8080/appointment/new", appointment) 
+  createAppointment(appointment:Appointment):Observable<Appointment>{
+    return this.httpClient.post<Appointment>("http://localhost:8080/appointment/new-spot", appointment) 
   }
 }
