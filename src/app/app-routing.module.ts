@@ -56,6 +56,7 @@ const routes: Routes = [
   {path:'patient', component:UserPatientComponent},
   {path:'patient/bills', component:PatientViewBillsComponent},
 <<<<<<< HEAD
+<<<<<<< HEAD
   {path:'patient/appointments', component:PatientViewAppointmentsComponent},
   //{path:'doctorViewBookedAppointments', component:DoctorAppointmentComponent},
   //{path:'patient-bills', component:PatientViewBillsComponent},
@@ -63,6 +64,13 @@ const routes: Routes = [
 =======
   {path:'patient/appointments', component:PatientViewAppointmentsComponent}
 >>>>>>> 3dd0cf5 (1.3)
+=======
+  {path:'patient/appointments', component:PatientViewAppointmentsComponent},
+
+  {
+    path:'unauth', component:UnauthpageComponent
+  }
+>>>>>>> 5baa684 (1.4)
 ];
 
 @NgModule({

@@ -19,7 +19,7 @@ export class DoctorNewComponent implements OnInit {
   address:Address = new Address(1,"","","",1,"")
 
   //Make sure we do not have user with that id
-  newDoctor: User = new User(99999999,"","","","","","","",0,this.address,new Date,"Doctor")
+  newDoctor: User = new User(99999999,"","","","","","","",0,this.address,new Date,"doctor")
 
   createDoctor(){
     this.adminService.createDoctor(this.newDoctor).subscribe(
