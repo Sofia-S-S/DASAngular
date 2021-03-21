@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs'; 
 import { User } from '../models/user';
 import { Appointment } from '../models/appointment';
-import { Patient } from '../models/patient';
 import { Bill } from '../models/bill';
 
 @Injectable({
@@ -11,39 +10,43 @@ import { Bill } from '../models/bill';
 })
 export class PatientServiceService {
 
-  //the parameter can be set server-side or here
-  registerNewPatient():Observable<User> {
-    return this.HttpClient.get('http://localhost:8080/patient/new') as Observable<User>
+  //endpoint still not setup
+  registerNewPatient(formData:any):Observable<any> {
+    let headers = new HttpHeaders({
+      'Content-Type':'multipart/form-data'
+    });
+    let options = {headers: headers};
+    return this.HttpClient.post('http://localhost:8080/patient/new', formData) 
   }
 
-  //the parameter can be set server-side or here
+  //endpoint is setup in appointment controller
   viewAvailability():Observable<Appointment> {
-    return this.HttpClient.get('http://localhost:8080/patient/availability') as Observable<Appointment>
+    return this.HttpClient.get('http://localhost:8080/appointment/availability') as Observable<Appointment>
   }
 
-  //the parameter can be set server-side or here
+  //endpoint is setup in appointment controller
   bookAppointment():Observable<Appointment> {
-    return this.HttpClient.get('http://localhost:8080/patient/booking') as Observable<Appointment>
+    return this.HttpClient.get('http://localhost:8080/appointment/booking') as Observable<Appointment>
   }
 
-  //the parameter can be set server-side or here
+  //endpoint setup in appointment controller
   getMyAppointments():Observable<Appointment[]> {
-    return this.HttpClient.get('http://localhost:8080/patient/appointments') as Observable<Appointment[]>
+    return this.HttpClient.get('http://localhost:8080/appointment/appointments') as Observable<Appointment[]>
   }
 
-  //the parameter can be set server-side or here
+  //endpoint is setup in appointment controller
   cancelAppointment():Observable<Appointment> {
-    return this.HttpClient.get('http://localhost:8080/patient/cancel') as Observable<Appointment>
+    return this.HttpClient.get('http://localhost:8080/appointment/cancel') as Observable<Appointment>
   }
 
   constructor(private HttpClient:HttpClient) { }
-  //the parameter can be set server-side or here
+  //endpoint still not setup
   viewMyBills():Observable<Bill[]> {
-    return this.HttpClient.get('http://localhost:8080/patient/bills') as Observable<Bill[]>
+    return this.HttpClient.get('http://localhost:8080/bill/bills') as Observable<Bill[]>
 
   }
 
-  //the parameter can be set server-side or here
+  //endpint not setup in bill controller 
   payBill():Observable<Bill> {
     return this.HttpClient.get('http://localhost:8080/patient/pay') as Observable<Bill>
   }

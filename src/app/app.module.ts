@@ -37,6 +37,7 @@ import { PatientNavbarComponent } from './components/patient/patient-navbar/pati
 import { PatientHeaderComponent } from './components/patient/patient-header/patient-header.component';
 
 import { PatientDoctorsAllComponent } from './components/patient/patient-doctors-all/patient-doctors-all.component';
+import { PatientRegisterComponent } from './components/patient/patientregister/patient-register/patient-register.component';
 
 
 
@@ -68,7 +69,8 @@ import { PatientDoctorsAllComponent } from './components/patient/patient-doctors
     DoctorHeaderComponent,
     PatientNavbarComponent,
     PatientHeaderComponent,
-    PatientDoctorsAllComponent
+    PatientDoctorsAllComponent,
+    PatientRegisterComponent,
   ],
   imports: [
     BrowserModule,
