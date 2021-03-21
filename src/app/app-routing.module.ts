@@ -37,6 +37,7 @@ const routes: Routes = [
   {path:'admin/bill-new', component:BillNewComponent},
   {path:'admin/bills', component:BillsComponent},
   {path:'doctor', component:UserDoctorComponent},
+<<<<<<< HEAD
 
   //{path:'doctorViewSelfPatients', component:DoctorComponent},
 
@@ -44,14 +45,24 @@ const routes: Routes = [
   // {path:'doctorViewBookedAppointments', component:DoctorAppointmentComponent},
   // {path:'bills', component:PatientViewBillsComponent},
 
+=======
+  {path:'doctorViewSelfPatients', component:DoctorComponent},
+  {path:'test', component:TestComponent}
+  // {path:'doctorViewBookedAppointments', component:DoctorAppointmentComponent},
+  // {path:'bills', component:PatientViewBillsComponent},
+>>>>>>> 3dd0cf5 (1.3)
   {path:'doctor/patients', component:DoctorComponent},
   {path:'doctor/appointments', component:DoctorAppointmentComponent},
   {path:'patient', component:UserPatientComponent},
   {path:'patient/bills', component:PatientViewBillsComponent},
+<<<<<<< HEAD
   {path:'patient/appointments', component:PatientViewAppointmentsComponent},
   //{path:'doctorViewBookedAppointments', component:DoctorAppointmentComponent},
   //{path:'patient-bills', component:PatientViewBillsComponent},
   {path:'patient-new', component:PatientRegisterComponent},
+=======
+  {path:'patient/appointments', component:PatientViewAppointmentsComponent}
+>>>>>>> 3dd0cf5 (1.3)
 ];
 
 @NgModule({

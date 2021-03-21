@@ -22,6 +22,7 @@ import { ScheduleNewComponent } from './components/admin/schedule-new/schedule-n
 import { ScheduleAllComponent } from './components/admin/schedule-all/schedule-all.component';
 import { BillNewComponent } from './components/admin/bill-new/bill-new.component';
 import { BillsComponent } from './components/admin/bills/bills.component';
+<<<<<<< HEAD
 
 import { TestComponent } from './test/test.component';
 
@@ -41,6 +42,12 @@ import { DoctorAppointmentComponent } from './components/doctor/doctorappointmen
 import { PatientViewBillsComponent } from './components/patient/patientviewbills/patient-view-bills/patient-view-bills.component';
 import { PatientViewAppointmentsComponent } from './components/patient/patientviewappointments/patient-view-appointments/patient-view-appointments.component';
 import { PatientRegisterComponent } from './components/patient/patientregister/patient-register/patient-register.component'; 
+=======
+import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
+import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
+import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
+import { TestComponent } from './test/test.component';
+>>>>>>> 3dd0cf5 (1.3)
 
 
 @NgModule({
@@ -64,6 +71,7 @@ import { PatientRegisterComponent } from './components/patient/patientregister/p
 
     PatientViewBillsComponent,
     PatientViewAppointmentsComponent,
+<<<<<<< HEAD
 
     TestComponent,
 
@@ -85,6 +93,9 @@ import { PatientRegisterComponent } from './components/patient/patientregister/p
     PatientRegisterComponent
 
 
+=======
+    TestComponent
+>>>>>>> 3dd0cf5 (1.3)
   ],
   imports: [
     BrowserModule,
