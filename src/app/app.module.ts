@@ -24,12 +24,21 @@ import { BillNewComponent } from './components/admin/bill-new/bill-new.component
 import { BillsComponent } from './components/admin/bills/bills.component';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
 import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
 import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
 >>>>>>> f1440db (Added POST and GET for patient)
+=======
+import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
+import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
+import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
+=======
+
+>>>>>>> c5e2c59 (Deleted and commented in routing and module)
+>>>>>>> d375560 (Deleted and commented in routing and module)
 import { TestComponent } from './test/test.component';
 
 import { AdminNavbarComponent } from './components/admin/admin-navbar/admin-navbar.component';
@@ -42,13 +51,13 @@ import { PatientHeaderComponent } from './components/patient/patient-header/pati
 import { PatientDoctorsAllComponent } from './components/patient/patient-doctors-all/patient-doctors-all.component';
 
 
-=======
+
 
 import { DoctorAppointmentComponent } from './components/doctor/doctorappointment/doctor-appointment/doctor-appointment.component';
 import { PatientViewBillsComponent } from './components/patient/patientviewbills/patient-view-bills/patient-view-bills.component';
 import { PatientViewAppointmentsComponent } from './components/patient/patientviewappointments/patient-view-appointments/patient-view-appointments.component';
 import { PatientRegisterComponent } from './components/patient/patientregister/patient-register/patient-register.component'; 
->>>>>>> 3729c49 (Added POST and GET for patient)
+
 
 
 import { DoctorAppointmentComponent } from './components/doctor/doctorappointment/doctor-appointment/doctor-appointment.component';
@@ -74,6 +83,7 @@ import { TestComponent } from './test/test.component';
     RegisterComponent,
     DoctorComponent,
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
@@ -82,6 +92,10 @@ import { TestComponent } from './test/test.component';
 
 >>>>>>> 3729c49 (Added POST and GET for patient)
 >>>>>>> f1440db (Added POST and GET for patient)
+=======
+
+
+>>>>>>> d375560 (Deleted and commented in routing and module)
     DoctorNewComponent,
     DoctorsAllComponent,
     ScheduleNewComponent,
@@ -89,11 +103,15 @@ import { TestComponent } from './test/test.component';
     BillNewComponent,
     BillsComponent,
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
     DoctorAppointmentComponent,
 >>>>>>> f1440db (Added POST and GET for patient)
+=======
+
+>>>>>>> d375560 (Deleted and commented in routing and module)
     PatientViewBillsComponent,
     PatientViewAppointmentsComponent,
 <<<<<<< HEAD
@@ -118,14 +136,20 @@ import { TestComponent } from './test/test.component';
 =======
     PatientDoctorsAllComponent,
 
+<<<<<<< HEAD
     PatientHeaderComponent
 =======
 >>>>>>> f1440db (Added POST and GET for patient)
+=======
+    PatientHeaderComponent,
+
+>>>>>>> d375560 (Deleted and commented in routing and module)
 
     DoctorAppointmentComponent,
     PatientViewBillsComponent,
     PatientViewAppointmentsComponent,
     PatientRegisterComponent
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -134,6 +158,9 @@ import { TestComponent } from './test/test.component';
 >>>>>>> 3dd0cf5 (1.3)
 =======
 >>>>>>> 3729c49 (Added POST and GET for patient)
+=======
+
+>>>>>>> d375560 (Deleted and commented in routing and module)
 
 >>>>>>> 7b80df5 (Added POST and GET for patient)
 >>>>>>> f1440db (Added POST and GET for patient)

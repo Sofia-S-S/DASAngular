@@ -8,6 +8,7 @@ import {UserDoctorComponent} from './user-doctor/user-doctor.component';
 import {UserPatientComponent} from './user-patient/user-patient.component';
 import { DoctorComponent } from './components/doctor/doctor.component';
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -15,6 +16,9 @@ import { DoctorComponent } from './components/doctor/doctor.component';
 
 >>>>>>> 3729c49 (Added POST and GET for patient)
 >>>>>>> f1440db (Added POST and GET for patient)
+=======
+
+>>>>>>> d375560 (Deleted and commented in routing and module)
 import { DoctorsAllComponent } from './components/admin/doctors-all/doctors-all.component';
 import { DoctorNewComponent } from './components/admin/doctor-new/doctor-new.component';
 import { ScheduleAllComponent } from './components/admin/schedule-all/schedule-all.component';
@@ -23,12 +27,17 @@ import { BillNewComponent } from './components/admin/bill-new/bill-new.component
 import { BillsComponent } from './components/admin/bills/bills.component';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
 >>>>>>> f1440db (Added POST and GET for patient)
+=======
+
+>>>>>>> d375560 (Deleted and commented in routing and module)
 import { TestComponent } from './test/test.component';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 import { DoctorAppointmentComponent } from './components/doctor/doctorappointment/doctor-appointment/doctor-appointment.component';
 import { PatientViewBillsComponent } from './components/patient/patientviewbills/patient-view-bills/patient-view-bills.component';
@@ -40,11 +49,18 @@ import { DoctorAppointmentComponent } from './components/doctor/doctorAppointmen
 import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
 import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
 =======
+=======
+>>>>>>> d375560 (Deleted and commented in routing and module)
 import { DoctorAppointmentComponent } from './components/doctor/doctorappointment/doctor-appointment/doctor-appointment.component';
 import { PatientViewBillsComponent } from './components/patient/patientviewbills/patient-view-bills/patient-view-bills.component';
+import { PatientViewAppointmentsComponent } from './components/patient/patientviewappointments/patient-view-appointments/patient-view-appointments.component';
 import { PatientRegisterComponent } from './components/patient/patientregister/patient-register/patient-register.component';
+<<<<<<< HEAD
 >>>>>>> 3729c49 (Added POST and GET for patient)
 >>>>>>> f1440db (Added POST and GET for patient)
+=======
+
+>>>>>>> d375560 (Deleted and commented in routing and module)
 
 
 const routes: Routes = [
@@ -64,10 +80,15 @@ const routes: Routes = [
   //{path:'doctorViewSelfPatients', component:DoctorComponent},
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   {path:'doctorViewSelfPatients', component:DoctorComponent},
 <<<<<<< HEAD
 >>>>>>> f1440db (Added POST and GET for patient)
+=======
+  //{path:'doctorViewSelfPatients', component:DoctorComponent},
+
+>>>>>>> d375560 (Deleted and commented in routing and module)
   {path:'test', component:TestComponent},
   // {path:'doctorViewBookedAppointments', component:DoctorAppointmentComponent},
   // {path:'bills', component:PatientViewBillsComponent},
@@ -93,6 +114,7 @@ const routes: Routes = [
 >>>>>>> 3dd0cf5 (1.3)
 =======
   {path:'patient/appointments', component:PatientViewAppointmentsComponent},
+<<<<<<< HEAD
 
 <<<<<<< HEAD
   {
@@ -108,7 +130,15 @@ const routes: Routes = [
   {path:'patient-new', component:PatientRegisterComponent},
 >>>>>>> 3729c49 (Added POST and GET for patient)
 >>>>>>> 7b80df5 (Added POST and GET for patient)
+<<<<<<< HEAD
 >>>>>>> f1440db (Added POST and GET for patient)
+=======
+=======
+  //{path:'doctorViewBookedAppointments', component:DoctorAppointmentComponent},
+  //{path:'patient-bills', component:PatientViewBillsComponent},
+  {path:'patient-new', component:PatientRegisterComponent},
+>>>>>>> c5e2c59 (Deleted and commented in routing and module)
+>>>>>>> d375560 (Deleted and commented in routing and module)
 ];
 
 @NgModule({
