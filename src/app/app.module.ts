@@ -22,6 +22,7 @@ import { ScheduleNewComponent } from './components/admin/schedule-new/schedule-n
 import { ScheduleAllComponent } from './components/admin/schedule-all/schedule-all.component';
 import { BillNewComponent } from './components/admin/bill-new/bill-new.component';
 import { BillsComponent } from './components/admin/bills/bills.component';
+<<<<<<< HEAD
 import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
 import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
 import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
@@ -38,6 +39,13 @@ import { PatientHeaderComponent } from './components/patient/patient-header/pati
 import { PatientDoctorsAllComponent } from './components/patient/patient-doctors-all/patient-doctors-all.component';
 
 
+=======
+
+import { DoctorAppointmentComponent } from './components/doctor/doctorappointment/doctor-appointment/doctor-appointment.component';
+import { PatientViewBillsComponent } from './components/patient/patientviewbills/patient-view-bills/patient-view-bills.component';
+import { PatientViewAppointmentsComponent } from './components/patient/patientviewappointments/patient-view-appointments/patient-view-appointments.component';
+import { PatientRegisterComponent } from './components/patient/patientregister/patient-register/patient-register.component'; 
+>>>>>>> 3729c49 (Added POST and GET for patient)
 
 @NgModule({
   declarations: [
@@ -49,12 +57,17 @@ import { PatientDoctorsAllComponent } from './components/patient/patient-doctors
     UserAdminComponent,
     RegisterComponent,
     DoctorComponent,
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3729c49 (Added POST and GET for patient)
     DoctorNewComponent,
     DoctorsAllComponent,
     ScheduleNewComponent,
     ScheduleAllComponent,
     BillNewComponent,
     BillsComponent,
+<<<<<<< HEAD
     DoctorAppointmentComponent,
     PatientViewBillsComponent,
     PatientViewAppointmentsComponent,
@@ -71,6 +84,13 @@ import { PatientDoctorsAllComponent } from './components/patient/patient-doctors
     PatientDoctorsAllComponent,
 
     PatientHeaderComponent
+=======
+
+    DoctorAppointmentComponent,
+    PatientViewBillsComponent,
+    PatientViewAppointmentsComponent,
+    PatientRegisterComponent
+>>>>>>> 3729c49 (Added POST and GET for patient)
 
   ],
   imports: [
