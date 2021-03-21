@@ -33,18 +33,15 @@ const routes: Routes = [
   {path:'admin/bill-new', component:BillNewComponent},
   {path:'admin/bills', component:BillsComponent},
   {path:'doctor', component:UserDoctorComponent},
-<<<<<<< HEAD
   {path:'doctorViewSelfPatients', component:DoctorComponent},
   {path:'test', component:TestComponent}
   // {path:'doctorViewBookedAppointments', component:DoctorAppointmentComponent},
   // {path:'bills', component:PatientViewBillsComponent},
-=======
   {path:'doctor/patients', component:DoctorComponent},
   {path:'doctor/appointments', component:DoctorAppointmentComponent},
   {path:'patient', component:UserPatientComponent},
   {path:'patient/bills', component:PatientViewBillsComponent},
   {path:'patient/appointments', component:PatientViewAppointmentsComponent}
->>>>>>> 2863807674fa2dab047a977a91612f960a152062
 ];
 
 @NgModule({
