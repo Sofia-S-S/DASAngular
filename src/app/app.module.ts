@@ -22,30 +22,12 @@ import { ScheduleNewComponent } from './components/admin/schedule-new/schedule-n
 import { ScheduleAllComponent } from './components/admin/schedule-all/schedule-all.component';
 import { BillNewComponent } from './components/admin/bill-new/bill-new.component';
 import { BillsComponent } from './components/admin/bills/bills.component';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
-import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
-import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
->>>>>>> f1440db (Added POST and GET for patient)
-=======
-import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
-import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
-import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
-=======
-
->>>>>>> c5e2c59 (Deleted and commented in routing and module)
->>>>>>> d375560 (Deleted and commented in routing and module)
-=======
-import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
-import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
-import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
->>>>>>> 2780aaa (Rebased and fixed aap-rotuing and module)
+import { DoctorAppointmentComponent } from './components/doctor/doctorappointment/doctor-appointment/doctor-appointment.component';
+import { PatientViewBillsComponent } from './components/patient/patientviewbills/patient-view-bills/patient-view-bills.component';
+import { PatientViewAppointmentsComponent } from './components/patient/patientviewappointments/patient-view-appointments/patient-view-appointments.component';
 import { TestComponent } from './test/test.component';
+import { AuthGuard } from './auth_service/auth.guard';
+import { UnauthpageComponent } from './auth_service/unauthpage/unauthpage.component';
 
 import { AdminNavbarComponent } from './components/admin/admin-navbar/admin-navbar.component';
 import { AdminHeaderComponent } from './components/admin/admin-header/admin-header.component';
@@ -55,20 +37,8 @@ import { PatientNavbarComponent } from './components/patient/patient-navbar/pati
 import { PatientHeaderComponent } from './components/patient/patient-header/patient-header.component';
 
 import { PatientDoctorsAllComponent } from './components/patient/patient-doctors-all/patient-doctors-all.component';
-import { PatientRegisterComponent } from './components/patient/patientregister/patient-register/patient-register.component'; 
+import { PatientRegisterComponent } from './components/patient/patientregister/patient-register/patient-register.component';
 
-
-
-import { DoctorAppointmentComponent } from './components/doctor/doctorappointment/doctor-appointment/doctor-appointment.component';
-import { PatientViewBillsComponent } from './components/patient/patientviewbills/patient-view-bills/patient-view-bills.component';
-import { PatientViewAppointmentsComponent } from './components/patient/patientviewappointments/patient-view-appointments/patient-view-appointments.component';
-import { PatientRegisterComponent } from './components/patient/patientregister/patient-register/patient-register.component'; 
-=======
-import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
-import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
-import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
-import { TestComponent } from './test/test.component';
->>>>>>> 3dd0cf5 (1.3)
 
 
 @NgModule({
@@ -81,100 +51,26 @@ import { TestComponent } from './test/test.component';
     UserAdminComponent,
     RegisterComponent,
     DoctorComponent,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 3729c49 (Added POST and GET for patient)
->>>>>>> f1440db (Added POST and GET for patient)
-=======
-
-
->>>>>>> d375560 (Deleted and commented in routing and module)
-=======
->>>>>>> 2780aaa (Rebased and fixed aap-rotuing and module)
     DoctorNewComponent,
     DoctorsAllComponent,
     ScheduleNewComponent,
     ScheduleAllComponent,
     BillNewComponent,
     BillsComponent,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
     DoctorAppointmentComponent,
->>>>>>> f1440db (Added POST and GET for patient)
-=======
-
->>>>>>> d375560 (Deleted and commented in routing and module)
-=======
-    DoctorAppointmentComponent,
->>>>>>> 2780aaa (Rebased and fixed aap-rotuing and module)
     PatientViewBillsComponent,
     PatientViewAppointmentsComponent,
-<<<<<<< HEAD
-
     TestComponent,
+    UnauthpageComponent,
 
     AdminNavbarComponent,
     AdminHeaderComponent,
     DoctorNavbarComponent,
     DoctorHeaderComponent,
     PatientNavbarComponent,
-
     PatientHeaderComponent,
-<<<<<<< HEAD
-<<<<<<< HEAD
-    PatientDoctorsAllComponent,
-
-    PatientHeaderComponent,
-
-=======
-<<<<<<< HEAD
-    PatientDoctorsAllComponent
-=======
-    PatientDoctorsAllComponent,
-
-<<<<<<< HEAD
-    PatientHeaderComponent
-=======
->>>>>>> f1440db (Added POST and GET for patient)
-=======
-    PatientHeaderComponent,
-
->>>>>>> d375560 (Deleted and commented in routing and module)
-
-    DoctorAppointmentComponent,
-    PatientViewBillsComponent,
-    PatientViewAppointmentsComponent,
-    PatientRegisterComponent
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
-    TestComponent
->>>>>>> 3dd0cf5 (1.3)
-=======
->>>>>>> 3729c49 (Added POST and GET for patient)
-=======
-
->>>>>>> d375560 (Deleted and commented in routing and module)
-
->>>>>>> 7b80df5 (Added POST and GET for patient)
->>>>>>> f1440db (Added POST and GET for patient)
-=======
     PatientDoctorsAllComponent,
     PatientRegisterComponent,
->>>>>>> 2780aaa (Rebased and fixed aap-rotuing and module)
   ],
   imports: [
     BrowserModule,
@@ -182,7 +78,7 @@ import { TestComponent } from './test/test.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [authInterceptorProviders],
+  providers: [authInterceptorProviders, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
