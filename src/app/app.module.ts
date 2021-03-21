@@ -23,7 +23,13 @@ import { ScheduleAllComponent } from './components/admin/schedule-all/schedule-a
 import { BillNewComponent } from './components/admin/bill-new/bill-new.component';
 import { BillsComponent } from './components/admin/bills/bills.component';
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
+import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
+import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
+>>>>>>> f1440db (Added POST and GET for patient)
 import { TestComponent } from './test/test.component';
 
 import { AdminNavbarComponent } from './components/admin/admin-navbar/admin-navbar.component';
@@ -36,6 +42,13 @@ import { PatientHeaderComponent } from './components/patient/patient-header/pati
 import { PatientDoctorsAllComponent } from './components/patient/patient-doctors-all/patient-doctors-all.component';
 
 
+=======
+
+import { DoctorAppointmentComponent } from './components/doctor/doctorappointment/doctor-appointment/doctor-appointment.component';
+import { PatientViewBillsComponent } from './components/patient/patientviewbills/patient-view-bills/patient-view-bills.component';
+import { PatientViewAppointmentsComponent } from './components/patient/patientviewappointments/patient-view-appointments/patient-view-appointments.component';
+import { PatientRegisterComponent } from './components/patient/patientregister/patient-register/patient-register.component'; 
+>>>>>>> 3729c49 (Added POST and GET for patient)
 
 
 import { DoctorAppointmentComponent } from './components/doctor/doctorappointment/doctor-appointment/doctor-appointment.component';
@@ -60,15 +73,27 @@ import { TestComponent } from './test/test.component';
     UserAdminComponent,
     RegisterComponent,
     DoctorComponent,
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3729c49 (Added POST and GET for patient)
+>>>>>>> f1440db (Added POST and GET for patient)
     DoctorNewComponent,
     DoctorsAllComponent,
     ScheduleNewComponent,
     ScheduleAllComponent,
     BillNewComponent,
     BillsComponent,
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+    DoctorAppointmentComponent,
+>>>>>>> f1440db (Added POST and GET for patient)
     PatientViewBillsComponent,
     PatientViewAppointmentsComponent,
 <<<<<<< HEAD
@@ -82,20 +107,36 @@ import { TestComponent } from './test/test.component';
     PatientNavbarComponent,
 
     PatientHeaderComponent,
+<<<<<<< HEAD
     PatientDoctorsAllComponent,
 
     PatientHeaderComponent,
 
+=======
+<<<<<<< HEAD
+    PatientDoctorsAllComponent
+=======
+    PatientDoctorsAllComponent,
+
+    PatientHeaderComponent
+=======
+>>>>>>> f1440db (Added POST and GET for patient)
 
     DoctorAppointmentComponent,
     PatientViewBillsComponent,
     PatientViewAppointmentsComponent,
     PatientRegisterComponent
+<<<<<<< HEAD
 
 
 =======
     TestComponent
 >>>>>>> 3dd0cf5 (1.3)
+=======
+>>>>>>> 3729c49 (Added POST and GET for patient)
+
+>>>>>>> 7b80df5 (Added POST and GET for patient)
+>>>>>>> f1440db (Added POST and GET for patient)
   ],
   imports: [
     BrowserModule,
