@@ -18,7 +18,7 @@ export class PatientDoctorsAllComponent implements OnInit {
   doctors: User[] = [];
 
   address:Address = new Address(1,"","","",1,"")
-  newDoctor: User = new User(1,"","","","","","","",0,this.address,new Date,"")
+  doctor: User = new User(1,"","","","","","","",0,this.address,new Date,"")
 
   allDoctors(){
     this.adminService.getAllDoctors().subscribe(
@@ -35,4 +35,15 @@ export class PatientDoctorsAllComponent implements OnInit {
       }
     )
 
-}}
+}
+updateDoctor(){
+  this.adminService.createDoctor(this.doctor).subscribe(
+    (data) => {
+      console.log(data)
+    },
+    () => {
+    console.log("could not creat doctor")
+  }
+  )
+}
+}

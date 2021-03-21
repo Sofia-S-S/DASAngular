@@ -17,8 +17,30 @@ export class ScheduleNewComponent implements OnInit {
   ngOnInit(): void {
   }
   address:Address = new Address(1,"","","",1,"")
-  user: User = new User(99999999,"","","","","","","",0,this.address,new Date,"")
+  user: User = new User(1,"","","","","","","",0,this.address,new Date,"")
   spot: Appointment = new Appointment(999999999,new Date(),this.user,this.user,"")
 
+    //Start with form being visible
+    hideForm: boolean = false;
+    //Error message set to not visible
+    hideMessage: boolean = true;
+    hideError: boolean = true;
 
+  createSpot(){
+    this.adminService.createAppointment(this.spot).subscribe(
+      (data) => {
+        console.log(data)
+           //hide form and show a succsess message
+           this.hideForm = true;
+           this.hideError = true;
+           this.hideMessage = false;
+      },
+      () => {
+      console.log("could not creat spot")
+            //keep form and display an error
+            this.hideError = false;
+            this.hideMessage = true;
+    }
+    )
+  }
 }

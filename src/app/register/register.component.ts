@@ -51,7 +51,7 @@ export class RegisterComponent implements OnInit {
 
   onSubmit(): void {
     const { username, email, password} = this.form;
-    let role: string = 'doctor';
+    let role: string = 'admin';
     
     const addr = <Address>{}; 
     const dob = new Date();

@@ -19,6 +19,7 @@ import { TestComponent } from './test/test.component';
 import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
 import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
 import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
+import { PatientDoctorsAllComponent } from './components/patient/patient-doctors-all/patient-doctors-all.component';
 
 
 const routes: Routes = [
@@ -43,7 +44,8 @@ const routes: Routes = [
   {path:'doctor/appointments', component:DoctorAppointmentComponent},
   {path:'patient', component:UserPatientComponent},
   {path:'patient/bills', component:PatientViewBillsComponent},
-  {path:'patient/appointments', component:PatientViewAppointmentsComponent}
+  {path:'patient/appointments', component:PatientViewAppointmentsComponent},
+  {path:'patient/doctors', component:PatientDoctorsAllComponent}
 
 ];
 
