@@ -39,7 +39,7 @@ export class RegisterComponent implements OnInit {
 
   constructor(private authService: AuthService) { }
 
-  selectedFile:File = null;
+  selectedFile:any = null;
    // On file Select 
    onFileSelected(event) { 
     console.log(event);
