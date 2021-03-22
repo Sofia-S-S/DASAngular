@@ -1,0 +1,125 @@
+<!--Navbar-->
+<app-patient-navbar></app-patient-navbar>
+<!--Header-->
+<app-patient-header></app-patient-header>
+<!--Content-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UpdatePatient</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td>Username</td>
+          <td>Password</td>
+          <td>Profile Picture</td>
+          <td>First Name</td>
+          <td>Last Name</td>
+          <td>Gender</td>
+          <td>Email</td>
+          <td>Phone</td>
+          <td>Street</td>
+          <td>City</td>
+          <td>State</td>
+          <td>Apt</td>
+          <td>DOB</td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="patient-card">
+      <h2>Update Patient Information</h2>
+      <form>
+        <input
+          [(ngModel)]="newPatient.username"
+          type="text"
+          placeholder="username"
+          name="username"
+        />
+        <input
+          [(ngModel)]="newPatient.password"
+          type="text"
+          placeholder="password"
+          name="password"
+        />
+        <input
+          [(ngModel)]="newPatient.firstName"
+          type="text"
+          placeholder="first name"
+          name="firstName"
+        />
+        <input
+          [(ngModel)]="newPatient.lastName"
+          type="text"
+          placeholder="last name"
+          name="lastName"
+        />
+        <input
+          [(ngModel)]="newPatient.gender"
+          type="text"
+          placeholder="gender"
+          name="gender"
+        />
+        <input
+          [(ngModel)]="newPatient.email"
+          type="text"
+          placeholder="e-mail"
+          name="email"
+        />
+        <input
+          [(ngModel)]="newPatient.phone"
+          type="number"
+          placeholder="phone number"
+          name="phone"
+        />
+        <input
+          [(ngModel)]="newPatient.address.street"
+          type="text"
+          placeholder="street"
+          name="street"
+        />
+        <input
+          [(ngModel)]="newPatient.address.city"
+          type="text"
+          placeholder="city"
+          name="city"
+        />
+        <input
+          [(ngModel)]="newPatient.address.state"
+          type="text"
+          placeholder="state"
+          name="state"
+        />
+        <input
+          [(ngModel)]="newPatient.address.apt"
+          type="text"
+          placeholder="apt"
+          name="apt"
+        />
+        <label for="dob"> DOB</label>
+        <input
+          [(ngModel)]="newPatient.dob"
+          type="date"
+          placeholder="dob"
+          name="dob"
+        />
+        <div>
+          <label for="image">Image</label>
+          <input
+            type="file"
+            class="form-control"
+            accept="image/*"
+            (change)="onFileSelected($event)"
+          />
+        </div>
+        <button (click)="updatePatient()">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+table,
+th,
+td {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 125px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  padding: 12px 15px;
+}
+thead {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}

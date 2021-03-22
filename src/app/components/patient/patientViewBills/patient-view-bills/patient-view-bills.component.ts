@@ -19,6 +19,10 @@ export class PatientViewBillsComponent implements OnInit {
   ngOnInit(): void {
     this.viewMyBills();
   }
+
+  formatImage(img:any): any {
+    return 'data:image/jpeg;base64,' + img;
+  }
 //retrieves the patients's bills
   viewMyBills(){
     this.patientServiceService.viewMyBills().subscribe(

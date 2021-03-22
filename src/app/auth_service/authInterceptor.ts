@@ -13,10 +13,7 @@ export class AuthInterceptor implements HttpInterceptor{
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         let customRequest = request;
         const token = this.token.getToken();
-        console.log("token in Interceptor: " +token);
-        console.log('current userId in storage:'+ this.token.getUser().userid);
-        console.log('current username in storage:'+ this.token.getUser().username);
-
+        console.log("token: " +token);
         if (token != null) {
           // for Spring Boot back-end
           customRequest = request.clone({ headers: request.headers.set(TOKEN_HEADER_KEY, 'Bearer ' + token) });    

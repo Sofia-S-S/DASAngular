@@ -25,7 +25,15 @@
       <tbody>
         <tr *ngFor="let patient of patients">
           <td>{{ patient.patient.userId }}</td>
-          <td>{{ patient.patient.profilepicture }}</td>
+          <td>
+            <img
+              [src]="formatImage(patient.patient.profilepicture)"
+              id="image"
+              alt="RGB Image"
+              height="100"
+              width="120"
+            />
+          </td>
           <td>{{ patient.patient.firstName }}</td>
           <td>{{ patient.patient.lastName }}</td>
           <td>{{ patient.patient.gender }}</td>

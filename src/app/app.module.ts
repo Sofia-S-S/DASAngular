@@ -22,11 +22,12 @@ import { ScheduleNewComponent } from './components/admin/schedule-new/schedule-n
 import { ScheduleAllComponent } from './components/admin/schedule-all/schedule-all.component';
 import { BillNewComponent } from './components/admin/bill-new/bill-new.component';
 import { BillsComponent } from './components/admin/bills/bills.component';
-import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
-import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
-import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
-
+import { DoctorAppointmentComponent } from './components/doctor/doctorappointment/doctor-appointment/doctor-appointment.component';
+import { PatientViewBillsComponent } from './components/patient/patientviewbills/patient-view-bills/patient-view-bills.component';
+import { PatientViewAppointmentsComponent } from './components/patient/patientviewappointments/patient-view-appointments/patient-view-appointments.component';
 import { TestComponent } from './test/test.component';
+import { AuthGuard } from './auth_service/auth.guard';
+import { UnauthpageComponent } from './auth_service/unauthpage/unauthpage.component';
 
 import { AdminNavbarComponent } from './components/admin/admin-navbar/admin-navbar.component';
 import { AdminHeaderComponent } from './components/admin/admin-header/admin-header.component';
@@ -36,6 +37,8 @@ import { PatientNavbarComponent } from './components/patient/patient-navbar/pati
 import { PatientHeaderComponent } from './components/patient/patient-header/patient-header.component';
 
 import { PatientDoctorsAllComponent } from './components/patient/patient-doctors-all/patient-doctors-all.component';
+import { PatientRegisterComponent } from './components/patient/patientregister/patient-register/patient-register.component';
+import { PatientComponent } from './components/patient/patient.component';
 
 
 
@@ -58,20 +61,18 @@ import { PatientDoctorsAllComponent } from './components/patient/patient-doctors
     DoctorAppointmentComponent,
     PatientViewBillsComponent,
     PatientViewAppointmentsComponent,
-
     TestComponent,
+    UnauthpageComponent,
 
     AdminNavbarComponent,
     AdminHeaderComponent,
     DoctorNavbarComponent,
     DoctorHeaderComponent,
     PatientNavbarComponent,
-
     PatientHeaderComponent,
     PatientDoctorsAllComponent,
-
-    PatientHeaderComponent
-
+    PatientRegisterComponent,
+    PatientComponent,
   ],
   imports: [
     BrowserModule,
@@ -79,7 +80,7 @@ import { PatientDoctorsAllComponent } from './components/patient/patient-doctors
     FormsModule,
     HttpClientModule
   ],
-  providers: [authInterceptorProviders],
+  providers: [authInterceptorProviders, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -39,7 +39,7 @@ export class RegisterComponent implements OnInit {
 
   constructor(private authService: AuthService) { }
 
-  selectedFile:File = null;
+  selectedFile:any = null;
    // On file Select 
    onFileSelected(event) { 
     console.log(event);
@@ -51,7 +51,7 @@ export class RegisterComponent implements OnInit {
 
   onSubmit(): void {
     const { username, email, password} = this.form;
-    let role: string = 'admin';
+    let role: string = 'patient';
     
     const addr = <Address>{}; 
     const dob = new Date();

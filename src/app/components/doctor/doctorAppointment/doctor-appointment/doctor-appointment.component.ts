@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Appointment } from 'src/app/models/appointment';
-import { Patient } from 'src/app/models/patient';
-import { User } from 'src/app/models/user';
 import { UserDoctorServiceService } from 'src/app/service/user-doctor-service.service';
 
 @Component({
@@ -19,6 +17,10 @@ export class DoctorAppointmentComponent implements OnInit {
 
   ngOnInit(): void {
     this.viewBookedAppointments();
+  }
+
+  formatImage(img:any): any {
+    return 'data:image/jpeg;base64,' + img;
   }
 
   //retrieves the doctor's appointments that are booked and active
