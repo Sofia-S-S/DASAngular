@@ -46,7 +46,7 @@ const routes: Routes = [
   {path:'admin/doctors', component:DoctorsAllComponent},
   {path:'admin/doctor-new', component:DoctorNewComponent},
   {path:'admin/schedule', component:ScheduleAllComponent},
-  {path:'admin/scheduleng-new', component:ScheduleNewComponent},
+  {path:'admin/schedule-new', component:ScheduleNewComponent},
   {path:'admin/bill-new', component:BillNewComponent},
   {path:'admin/bills', component:BillsComponent},
 
