@@ -11,8 +11,12 @@ import { TokenStorageService } from '../auth_service/token-storage.service';
 })
 export class PatientServiceService {
 
+<<<<<<< HEAD
   constructor(private HttpClient:HttpClient,
     private token:TokenStorageService) { }
+=======
+  constructor(private HttpClient:HttpClient, private token:TokenStorageService) { }
+>>>>>>> c90724f57aff22bc1c5862d223838d15408f51ef
 
   //endpoint still not setup
   registerNewPatient(formData:any):Observable<any> {
@@ -51,7 +55,10 @@ export class PatientServiceService {
     return this.HttpClient.get('http://localhost:8080/appointment/cancel') as Observable<Appointment>
   }
 
+<<<<<<< HEAD
   
+=======
+>>>>>>> c90724f57aff22bc1c5862d223838d15408f51ef
   //endpoint still not setup
   viewMyBills():Observable<Bill[]> {
     return this.HttpClient.get('http://localhost:8080/patient/bills?username=' + this.token.getUser().username) as Observable<Bill[]>
@@ -63,7 +70,13 @@ export class PatientServiceService {
     return this.HttpClient.get('http://localhost:8080/patient/pay') as Observable<Bill>
   }
 
+<<<<<<< HEAD
   getPatient():Observable<User> {
     return this.HttpClient.get('http://localhost:8080/patient/info?username=' + this.token.getUser().username) as Observable<User>
+=======
+  // Endpoint for grabbing patient info
+  viewInfo():Observable<User> {
+    return this.HttpClient.get('http://localhost:8080/user/info?username=' + this.token.getUser().username) as Observable<User>
+>>>>>>> c90724f57aff22bc1c5862d223838d15408f51ef
   }
 }

@@ -22,7 +22,11 @@ import {UnauthpageComponent} from './auth_service/unauthpage/unauthpage.componen
 import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
 import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
 import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
+
 import { PatientRegisterComponent} from './components/patient/patientregister/patient-register/patient-register.component';
+
+import { PatientDoctorsAllComponent } from './components/patient/patient-doctors-all/patient-doctors-all.component';
+
 
 
 const routes: Routes = [
@@ -72,6 +76,9 @@ const routes: Routes = [
   },
   {path:'patient/bills', component:PatientViewBillsComponent},
   {path:'patient/appointments', component:PatientViewAppointmentsComponent},
+
+  {path:'patient/doctors', component:PatientDoctorsAllComponent},
+
 
   {
     path:'unauth', component:UnauthpageComponent
