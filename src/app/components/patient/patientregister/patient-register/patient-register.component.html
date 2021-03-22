@@ -1,10 +1,16 @@
+<!--Navbar-->
+<app-patient-navbar></app-patient-navbar>
+<!--Header-->
+<app-patient-header></app-patient-header>
+<!--Content-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RegisterPatient</title>
+    <title>UpdatePatient</title>
   </head>
   <body>
     <table>
@@ -25,9 +31,10 @@
           <td>DOB</td>
         </tr>
       </thead>
+      <tbody></tbody>
     </table>
     <div class="patient-card">
-      <h2>Register new Patient</h2>
+      <h2>Update Patient Information</h2>
       <form>
         <input
           [(ngModel)]="newPatient.username"
@@ -72,25 +79,25 @@
           name="phone"
         />
         <input
-          [(ngModel)]="newAddress.street"
+          [(ngModel)]="newPatient.address.street"
           type="text"
           placeholder="street"
           name="street"
         />
         <input
-          [(ngModel)]="newAddress.city"
+          [(ngModel)]="newPatient.address.city"
           type="text"
           placeholder="city"
           name="city"
         />
         <input
-          [(ngModel)]="newAddress.state"
+          [(ngModel)]="newPatient.address.state"
           type="text"
           placeholder="state"
           name="state"
         />
         <input
-          [(ngModel)]="newAddress.apt"
+          [(ngModel)]="newPatient.address.apt"
           type="text"
           placeholder="apt"
           name="apt"
@@ -111,7 +118,7 @@
             (change)="onFileSelected($event)"
           />
         </div>
-        <button (click)="registerNewPatient()">Register</button>
+        <button (click)="updatePatient()">Submit</button>
       </form>
     </div>
   </body>

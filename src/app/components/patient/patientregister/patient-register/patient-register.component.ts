@@ -14,16 +14,19 @@ export class PatientRegisterComponent implements OnInit {
   constructor(private patientServiceService:PatientServiceService,
     private router:Router) { }
     role:String = 'patient';
-    newAddress:Address = new Address(2, "", "", "", 1, "");
-    newPatient:User = new User(99999999, "", "", "", "", "", "", "", 0, this.newAddress, new Date(), this.role);
-
+    newPatient:User = new User(99999999, "", "", "", "", "", "", "", 0, new Address(2, "", "", "", 1, ""), new Date(), this.role);
     selectedFile:any = null;
     onFileSelected(event:any) {
       console.log(event);
       this.selectedFile = event.target.files[0];
     }
-
+    //newPatient.profilepic = "";
   ngOnInit(): void {
+    this.getPatient();
+  }
+
+  formatImage(img:any): any {
+    return 'data:image/jpeg;base64,' + img;
   }
 
   //register the patients user and address info
@@ -38,7 +41,33 @@ export class PatientRegisterComponent implements OnInit {
       },
       () => {
         console.log(this.newPatient);
-        console.log(this.newAddress);
+        console.log("Oops, something went wrong.");
+      }
+    )
+  }
+
+  updatePatient(){
+    
+    let formData = new FormData();
+    formData.append("image", this.selectedFile, this.selectedFile.name);
+    formData.append('user', JSON.stringify(this.newPatient));
+    this.patientServiceService.updatePatient(formData).subscribe(
+      (data) => {
+        console.log(data);
+      },
+      () => {
+        console.log(this.newPatient);
+        console.log("Oops, something went wrong.");
+      }
+    )
+  }
+
+  getPatient() {
+    this.patientServiceService.getPatient().subscribe(
+      (data) => {
+        this.newPatient = data;
+      },
+      () => {
         console.log("Oops, something went wrong.");
       }
     )

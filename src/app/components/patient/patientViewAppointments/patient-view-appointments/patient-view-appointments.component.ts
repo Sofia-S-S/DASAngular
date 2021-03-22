@@ -20,6 +20,10 @@ export class PatientViewAppointmentsComponent implements OnInit {
     this.getMyAppointments();
   }
 
+  formatImage(img:any): any {
+    return 'data:image/jpeg;base64,' + img;
+  }
+
   //retrieves the patients's bills
   getMyAppointments(){
     this.patientServiceService.getMyAppointments().subscribe(
