@@ -3,8 +3,43 @@
 <!--Header-->
 <app-doctor-header></app-doctor-header>
 <!--Content-->
-	  <div class="container">
-		<h1>Doctor's page here</h1>
-		<p>{{content}}</p>
-
-	  </div>
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <td>Profile Picture</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Gender</td>
+        <td>Email</td>
+        <td>Phone</td>
+        <td>Street</td>
+        <td>City</td>
+        <td>State</td>
+        <td>Apt</td>
+        <td>DOB</td>
+      </tr>
+    </thead>
+    <tbody>
+      <td>
+        <img
+          [src]="formatImage(doctor.profilepicture)"
+          id="image"
+          alt="RGB Image"
+          height="100"
+          width="120"
+        />
+      </td>
+      <td>{{ doctor.firstName }}</td>
+      <td>{{ doctor.lastName }}</td>
+      <td>{{ doctor.gender }}</td>
+      <td>{{ doctor.email }}</td>
+      <td>{{ doctor.phone }}</td>
+      <td>{{ doctor.address.street }}</td>
+      <td>{{ doctor.address.city }}</td>
+      <td>{{ doctor.address.state }}</td>
+      <td>{{ doctor.address.apt }}</td>
+      <td>{{ doctor.dob }}</td>
+    </tbody>
+  </table>
+</div>

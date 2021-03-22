@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   }
   isLoggedIn:boolean = false;
   isLoginFailed:boolean = false;
-
+  
   /*
   isPatientIn:boolean = false;
   isDoctorIn:boolean = false;

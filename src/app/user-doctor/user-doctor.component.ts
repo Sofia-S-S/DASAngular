@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {DasUserService} from '../auth_service/das-user.service';
+import { Address } from '../models/address';
+import { User } from '../models/user';
+import { PatientServiceService } from '../service/patient-service.service';
 // import {TokenStorageService} from '../auth_service/token-storage.service';
 // import {Router} from '@angular/router';
 
@@ -12,13 +15,14 @@ import {DasUserService} from '../auth_service/das-user.service';
 export class UserDoctorComponent implements OnInit {
 
   content?:string;
-  constructor(private userService: DasUserService
+  constructor(private userService: DasUserService,
     // ,
     // private tokenStorageService: TokenStorageService,
     // private router:Router
+    private patientService:PatientServiceService
     ) { }
-
-    
+    newAddress:Address = new Address(2, "", "", "", 1, "");
+    doctor:User = new User(99999999, "", "", "", "", "", "", "", 0, this.newAddress, new Date(), "");
 
   ngOnInit(): void {
     this.userService.getUserDoctor().subscribe(
@@ -27,6 +31,23 @@ export class UserDoctorComponent implements OnInit {
       },
       err=>{
         this.content = JSON.parse(err.error).message;
+      }
+    )
+
+    this.getDoctor();
+  }
+
+  formatImage(img:any): any {
+    return 'data:image/jpeg;base64,' + img;
+  }
+
+  getDoctor() {
+    this.patientService.getPatient().subscribe(
+      (data) => {
+        this.doctor = data;
+      },
+      () => {
+        console.log("Oops, something went wrong.");
       }
     )
   }
