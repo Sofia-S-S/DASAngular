@@ -4,8 +4,37 @@
 <app-admin-header></app-admin-header>
 <!--Content-->
         <h1>All Doctors</h1>
-<div class="wrapper">
-<div *ngFor="let d of doctors" >
+
+        <div [hidden]="oneDoc" class = "containerReq" >
+            <h2>Update a Doctor's Info</h2>
+            <form > 
+                <input [(ngModel)]="doctor.userId" type="text" placeholder="userId" name="userId"/>
+                <input [(ngModel)]="doctor.username" type="text" placeholder="usermane" name="username"/>
+                <input [(ngModel)]="doctor.password" type="text" placeholder="password" name="password"/>
+                <input [(ngModel)]="doctor.profilepicture" type="text" placeholder="profilepicture" name="profilepicture"/>
+                <input [(ngModel)]="doctor.firstName" type="text" placeholder="first mame" name="firstName"/>
+                <input [(ngModel)]="doctor.lastName" type="text" placeholder="last name" name="lastName"/>
+                <input [(ngModel)]="doctor.gender" type="text" placeholder="gender" name="gender"/>
+                <input [(ngModel)]="doctor.email" type="text" placeholder="e-mail" name="email"/>
+                <label for="phone"> Phone number</label>
+                <input [(ngModel)]="doctor.phone" type="number" placeholder="phone number" name="phone"/>
+                <input [(ngModel)]="doctor.address.street" type="text" placeholder="address" name="street"/>
+                <input [(ngModel)]="doctor.address.city" type="text" placeholder="city" name="city"/>
+                <input [(ngModel)]="doctor.address.state" type="text" placeholder="state" name="state"/>
+                <input [(ngModel)]="doctor.address.apt" type="text" placeholder="apt, unit, suit" name="apt"/>
+                <label for="dob"> DOB</label>
+                <input [(ngModel)]="doctor.dob" type="date" placeholder="dob" name="dob"/>
+               <div class="divForBtn">
+                <button class="btn" (click)="updateDoctor()">Update Info</button>
+            </div>
+            </form>
+            <p style="color: rgb(56, 209, 56);" [hidden] = "hideMessage">Doctor registred succsessfully</p>
+            <p style="color:red" [hidden] = "hideError">Could not register a doctor</p>
+        </div>
+
+
+<div class="wrapper" >
+<div *ngFor="let d of doctors" [hidden]="allDoc" >
     <div class = "doctor-card">
         <p>First Name: {{d.firstName}}</p>
         <p>Last Name: {{d.lastName}}</p>
@@ -17,8 +46,9 @@
                     {{d.address.zipcode}},
                     {{d.address.apt}}
         </p>
-        <button class="btn">Update</button>
+        <button class="btn" (click)="oneDoctor(d.userId)">Update</button>
     </div>
+    
 </div>
 </div>
 

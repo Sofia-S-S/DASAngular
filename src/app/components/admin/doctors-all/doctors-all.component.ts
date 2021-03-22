@@ -14,13 +14,16 @@ export class DoctorsAllComponent implements OnInit {
 
   ngOnInit(): void {
     this.allDoctors()
+    // this.oneDoctor()
   }
   doctors: User[] = [];
 
-  address:Address = new Address(1,"","","",1,"")
-  newDoctor: User = new User(1,"","","","","","","",0,this.address,new Date,"")
+  allDoc: boolean = false;
+  oneDoc: boolean = true;
 
   allDoctors(){
+    this.allDoc = false;
+    this.oneDoc = true;
     this.adminService.getAllDoctors().subscribe(
             //we can define 2 callback f-ns (when working with Observable)
       //1.succsess
@@ -35,21 +38,59 @@ export class DoctorsAllComponent implements OnInit {
       }
     )
   }
+     //Show all doctors and hihe Update form
+    
 
-  createDoctor(){
-    this.adminService.createDoctor(this.newDoctor).subscribe(
+    //Error message set to not visible
+    hideMessage: boolean = true;
+    hideError: boolean = true;
+   
+    //Get id
+    address:Address = new Address(1,"","","",1,"")
+    doctor: User = new User(1,"","","","","","","",0,this.address,new Date,"")
+    // doctor2: User = new User(1,"","","","","","","",0,this.address,new Date,"")
+
+    oneDoctor(id:number){
+    
+    this.allDoc = true;
+    this.oneDoc = false;
+    this.adminService.getDoctorById(id).subscribe(
       (data) => {
+        this.doctor = data;
+        console.log("onedoctor")
         console.log(data)
+               //hide form and show a succsess message    
+      },
+      () => {
+      console.log("could not update doctor info")
+    
+    }
+    
+    )
+  }
+id: number = 0;
+  updateDoctor(){
+    
+    console.log("Before update")
+    console.log(this.doctor)
+    this.adminService.updateDoctor(this.doctor).subscribe(
+      (data) => {
+        console.log("update")
+        console.log(data)
+               //hide form and show a succsess message
+    
+               this.hideError = true;
+               this.hideMessage = false;
+                  //refresh doctors after updating
+                  this.allDoctors()
+                  //hide form and show all doctors
       },
       () => {
       console.log("could not creat doctor")
+      this.hideError = false;
+      this.hideMessage = true;
     }
     )
   }
-  // doc1: User = new User(1, "log","pas","pic","fname","lna","male","em",7777,"Home",Date.now(),"Doc")
-  // doc2: User = new User(1, "log","pas","pic","fname","lna","male","email",7777,"Home",Date.now(),"Doc")
- 
-
- 
 }
 

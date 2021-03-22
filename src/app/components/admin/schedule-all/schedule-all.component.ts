@@ -36,5 +36,5 @@ export class ScheduleAllComponent implements OnInit {
       }
     )
   }
-  status:String = "availiblegggg"
+
 }
