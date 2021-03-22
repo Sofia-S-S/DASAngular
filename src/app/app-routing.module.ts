@@ -19,9 +19,9 @@ import {Roles} from './auth_service/roles.enum';
 import {AuthGuard} from './auth_service/auth.guard';
 import {UnauthpageComponent} from './auth_service/unauthpage/unauthpage.component';
 
-import { DoctorAppointmentComponent } from './components/doctor/doctorAppointment/doctor-appointment/doctor-appointment.component';
-import { PatientViewBillsComponent } from './components/patient/patientViewBills/patient-view-bills/patient-view-bills.component';
-import { PatientViewAppointmentsComponent } from './components/patient/patientViewAppointments/patient-view-appointments/patient-view-appointments.component';
+import { DoctorAppointmentComponent } from './components/doctor/doctorappointment/doctor-appointment/doctor-appointment.component';
+import { PatientViewBillsComponent } from './components/patient/patientviewbills/patient-view-bills/patient-view-bills.component';
+import { PatientViewAppointmentsComponent } from './components/patient/patientviewappointments/patient-view-appointments/patient-view-appointments.component';
 
 import { PatientRegisterComponent} from './components/patient/patientregister/patient-register/patient-register.component';
 

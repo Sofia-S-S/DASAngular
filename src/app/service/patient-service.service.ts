@@ -22,6 +22,14 @@ export class PatientServiceService {
     return this.HttpClient.post('http://localhost:8080/patient/new', formData) 
   }
 
+  updatePatient(formData:any):Observable<any> {
+    let headers = new HttpHeaders({
+      'Content-Type':'multipart/form-data'
+    });
+    let options = {headers: headers};
+    return this.HttpClient.post('http://localhost:8080/patient/update', formData) 
+  }
+
   //endpoint is setup in appointment controller
   viewAvailability():Observable<Appointment> {
     return this.HttpClient.get('http://localhost:8080/appointment/availability') as Observable<Appointment>
@@ -34,7 +42,7 @@ export class PatientServiceService {
 
   //endpoint setup in appointment controller
   getMyAppointments():Observable<Appointment[]> {
-    return this.HttpClient.get('http://localhost:8080/appointment/appointments') as Observable<Appointment[]>
+    return this.HttpClient.get('http://localhost:8080/patient/appointments?username=' + this.token.getUser().username) as Observable<Appointment[]>
   }
 
   //endpoint is setup in appointment controller
@@ -44,7 +52,7 @@ export class PatientServiceService {
 
   //endpoint still not setup
   viewMyBills():Observable<Bill[]> {
-    return this.HttpClient.get('http://localhost:8080/bill/bills') as Observable<Bill[]>
+    return this.HttpClient.get('http://localhost:8080/patient/bills?username=' + this.token.getUser().username) as Observable<Bill[]>
 
   }
 
@@ -53,8 +61,12 @@ export class PatientServiceService {
     return this.HttpClient.get('http://localhost:8080/patient/pay') as Observable<Bill>
   }
 
+  getPatient():Observable<User> {
+    return this.HttpClient.get('http://localhost:8080/patient/info?username=' + this.token.getUser().username) as Observable<User>
   // Endpoint for grabbing patient info
-  viewInfo():Observable<User> {
-    return this.HttpClient.get('http://localhost:8080/user/info?username=' + this.token.getUser().username) as Observable<User>
-  }
+  
+}viewInfo():Observable<User> {
+  return this.HttpClient.get('http://localhost:8080/user/info?username=' + this.token.getUser().username) as Observable<User>
 }
+}
+

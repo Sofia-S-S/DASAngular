@@ -19,6 +19,10 @@ export class DoctorAppointmentComponent implements OnInit {
     this.viewBookedAppointments();
   }
 
+  formatImage(img:any): any {
+    return 'data:image/jpeg;base64,' + img;
+  }
+
   //retrieves the doctor's appointments that are booked and active
   viewBookedAppointments(){
     this.userDoctorServiceService.viewBookedAppointments().subscribe(

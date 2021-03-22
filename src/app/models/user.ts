@@ -30,5 +30,8 @@ export class User{
              this.dob = dob;
              this.role = role;
          }
+    public set profilepic(prp:string) {
+        this.profilepicture = prp;
+    }
 
 }
