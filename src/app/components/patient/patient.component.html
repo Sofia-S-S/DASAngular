@@ -3,4 +3,27 @@
 <!--Header-->
 <app-patient-header></app-patient-header>
 <!--Content-->
-<p>patient info here!</p>
+<div class="container">
+    <table id="info">
+        <thead>
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Gender</td>
+                <td>Email</td>
+                <td>phone</td>
+                <td>Date of Birth</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{patient.firstName}}</td>
+                <td>{{patient.lastName}}</td>
+                <td>{{patient.gender}}</td>
+                <td>{{patient.email}}</td>
+                <td>{{patient.phone}}</td>
+                <td>{{patient.dob}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
