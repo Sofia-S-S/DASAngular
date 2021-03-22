@@ -31,13 +31,13 @@ export class PatientServiceService {
   }
 
   //endpoint is setup in appointment controller
-  viewAvailability():Observable<Appointment> {
-    return this.HttpClient.get('http://localhost:8080/appointment/availability') as Observable<Appointment>
+  viewAvailability():Observable<Appointment[]> {
+    return this.HttpClient.get('http://localhost:8080/appointment/availability') as Observable<Appointment[]>
   }
 
   //endpoint is setup in appointment controller
-  bookAppointment():Observable<Appointment> {
-    return this.HttpClient.get('http://localhost:8080/appointment/booking') as Observable<Appointment>
+  bookAppointment(appointment:Appointment):Observable<Appointment> {
+    return this.HttpClient.post<Appointment>('http://localhost:8080/appointment/booking', appointment)
   }
 
   //endpoint setup in appointment controller
