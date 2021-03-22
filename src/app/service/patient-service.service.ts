@@ -4,11 +4,14 @@ import { Observable } from 'rxjs';
 import { User } from '../models/user';
 import { Appointment } from '../models/appointment';
 import { Bill } from '../models/bill';
+import { TokenStorageService } from '../auth_service/token-storage.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PatientServiceService {
+
+  constructor(private HttpClient:HttpClient, private token:TokenStorageService) { }
 
   //endpoint still not setup
   registerNewPatient(formData:any):Observable<any> {
@@ -39,7 +42,6 @@ export class PatientServiceService {
     return this.HttpClient.get('http://localhost:8080/appointment/cancel') as Observable<Appointment>
   }
 
-  constructor(private HttpClient:HttpClient) { }
   //endpoint still not setup
   viewMyBills():Observable<Bill[]> {
     return this.HttpClient.get('http://localhost:8080/bill/bills') as Observable<Bill[]>
@@ -49,5 +51,10 @@ export class PatientServiceService {
   //endpint not setup in bill controller 
   payBill():Observable<Bill> {
     return this.HttpClient.get('http://localhost:8080/patient/pay') as Observable<Bill>
+  }
+
+  // Endpoint for grabbing patient info
+  viewInfo():Observable<User> {
+    return this.HttpClient.get('http://localhost:8080/user/info?username=' + this.token.getUser().username) as Observable<User>
   }
 }
