@@ -26,6 +26,7 @@ import { PatientViewAppointmentsComponent } from './components/patient/patientVi
 import { PatientRegisterComponent} from './components/patient/patientregister/patient-register/patient-register.component';
 
 import { PatientDoctorsAllComponent } from './components/patient/patient-doctors-all/patient-doctors-all.component';
+import { PatientbookingComponent } from './components/patient/patientbooking/patientbooking.component';
 
 
 
@@ -78,6 +79,7 @@ const routes: Routes = [
   {path:'patient/appointments', component:PatientViewAppointmentsComponent},
 
   {path:'patient/doctors', component:PatientDoctorsAllComponent},
+  {path: 'patient/book', component:PatientbookingComponent},
 
 
   {
